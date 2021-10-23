@@ -20,7 +20,12 @@ public class Main {
     // todo : implement the methods and force exception handling in the printFile method
 
     private static String getFileContent(String fileName) {
-        File file = new File("src/tp2/magicFile/" + fileName);
+        //use the line below if you're a linux user
+        //File file = new File("src/tp2/magicFile/" + fileName);
+
+        //use the line below if you're a windows user
+        File file = new File("src\\tp2\\magicFile\\" + fileName);
+
         //the lines below help you to get the content
 //        Scanner reader = new Scanner(file);
 //        String content = reader.nextLine();
